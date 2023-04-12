@@ -11,7 +11,7 @@ const isPublic = (path: string) => {
   )
 }
 
-export default withClerkMiddleware((request: NextRequest) => {
+export default (request: NextRequest) => {
   //   if (isPublic(request.nextUrl.pathname)) {
   //     return NextResponse.next()
   //   }
@@ -27,7 +27,7 @@ export default withClerkMiddleware((request: NextRequest) => {
   //   }
 
   return NextResponse.next()
-})
+}
 
 // Stop Middleware running on static files and public folder
 export const config = {

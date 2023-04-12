@@ -8,9 +8,11 @@ export const metadata = {
 export default function RootLayout({
   children,
   parallel,
+  parallel2,
 }: {
   children: React.ReactNode
   parallel: React.ReactNode
+  parallel2: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -22,6 +24,10 @@ export default function RootLayout({
         <div>parallel:</div>
 
         {parallel}
+
+        <div>parallel2:</div>
+
+        {parallel2}
       </body>
     </html>
   )

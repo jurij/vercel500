@@ -1,5 +1,6 @@
 import { SignIn } from '@clerk/nextjs/app-beta'
 
 export default function Page() {
-  return <SignIn signUpUrl="/sign-up" />
+  //   return <SignIn signUpUrl="/sign-up" />
+  return null
 }

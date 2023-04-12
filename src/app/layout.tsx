@@ -24,13 +24,13 @@ export default function RootLayout({
 
           {children}
 
-          <div>parallel:</div>
+          {/* <div>parallel:</div>
 
           <SignedIn>{parallel}</SignedIn>
 
           <div>parallel2:</div>
 
-          <SignedOut>{parallel2}</SignedOut>
+          <SignedOut>{parallel2}</SignedOut> */}
         </body>
       </ClerkProvider>
     </html>

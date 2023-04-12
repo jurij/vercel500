@@ -1,3 +1,5 @@
+import { ClerkProvider, SignedIn, SignedOut } from '@clerk/nextjs/app-beta'
+
 import './globals.css'
 
 export const metadata = {
@@ -16,19 +18,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div>children:</div>
+      <ClerkProvider>
+        <body>
+          <div>children:</div>
 
-        {children}
+          {children}
 
-        <div>parallel:</div>
+          <div>parallel:</div>
 
-        {parallel}
+          <SignedIn>{parallel}</SignedIn>
 
-        <div>parallel2:</div>
+          <div>parallel2:</div>
 
-        {parallel2}
-      </body>
+          <SignedOut>{parallel2}</SignedOut>
+        </body>
+      </ClerkProvider>
     </html>
   )
 }

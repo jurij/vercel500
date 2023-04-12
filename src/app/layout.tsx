@@ -18,21 +18,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ClerkProvider>
-        <body>
-          <div>children:</div>
+      {/* <ClerkProvider> */}
+      <body>
+        <div>children:</div>
 
-          {children}
+        {children}
 
-          {/* <div>parallel:</div>
+        {/* <div>parallel:</div>
 
           <SignedIn>{parallel}</SignedIn>
 
           <div>parallel2:</div>
 
           <SignedOut>{parallel2}</SignedOut> */}
-        </body>
-      </ClerkProvider>
+      </body>
+      {/* </ClerkProvider> */}
     </html>
   )
 }
